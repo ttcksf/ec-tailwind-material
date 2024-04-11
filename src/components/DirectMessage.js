@@ -5,7 +5,7 @@ const DirectMessage = () => {
   return (
     <div className="flex justify-center items-center h-[350px] w-[100%] flex-col bg-[#82A284] p-4">
       <h1 className="md:text-[48px] text-[32px] font-bold">メールマガジン</h1>
-      <h2 className="md:text-[24px] text-[16px] mt-4 mobile:text-center p-4">
+      <h2 className="md:text-[24px] text-[16px] mt-4 text-center p-4">
         イベント予約、CDリリースなど新着情報はこちらから！
       </h2>
       <div className="flex mt-[3.2rem] item-center justify-between md:min-w-[32rem] min-h-[2.4rem] bg-white border-[#cccccc] rounded-[5px] overflow-hidden min-w-[20rem]">
