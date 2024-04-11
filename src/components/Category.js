@@ -9,7 +9,7 @@ const Category = ({ product }) => {
         alt="category_img"
       />
       <div className="flex absolute w-[100%] h-[100%] left-0 top-0 items-center justify-center flex-col">
-        <h2 className="text-white font-medium text-[32px]">{product.title}</h2>
+        <h2 className="text-white font-medium text-[24px]">{product.title}</h2>
         <button className="btn">See More</button>
       </div>
     </div>
