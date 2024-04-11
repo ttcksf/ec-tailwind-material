@@ -29,12 +29,14 @@
 .btn {
   @apply text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3;
 }
-
-.product_img {
-  @apply w-[80%] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-300;
+.summary {
+  @apply flex justify-between mt-3 w-[100%];
+}
+.item {
+  @apply flex w-[100%] h-auto md:flex-row items-center flex-col mb-8;
+}
+.quantity {
+  @apply flex-auto flex flex-col justify-center items-center md:mt-0 md:mb-0 mt-8 mb-8;
 }
 
-.colorSelect {
-  @apply w-[2rem] h-[2rem] rounded-full border-2 p-[10px] ml-5 cursor-pointer;
-}
 @tailwind utilities;
