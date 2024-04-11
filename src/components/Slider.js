@@ -3,10 +3,6 @@ import React, { useState } from "react";
 import { LocalSliderData } from "../localData/LocalSliderData";
 
 const Slider = () => {
-  const slideStyle = "slide flex items-center justify-center h-[100%]";
-  const arrowStyle =
-    "rounded-full bg-grey flex justify-center items-center shadow-md hover:cursor-pointer";
-
   const [slides] = useState(LocalSliderData);
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -26,7 +22,10 @@ const Slider = () => {
   };
   return (
     <div className="slider h-[640px] bg-white md:flex items-center justify-between hidden">
-      <div className={arrowStyle} onClick={prevSlide}>
+      <div
+        className="rounded-full bg-grey flex justify-center items-center shadow-md hover:cursor-pointer"
+        onClick={prevSlide}
+      >
         <ArrowLeftOutlined style={{ fontSize: "48px" }} />
       </div>
       {slides.map((slide, index) => {
@@ -39,7 +38,7 @@ const Slider = () => {
               }
               key={index}
             >
-              <div className={slideStyle}>
+              <div className="slide flex items-center justify-center h-[100%]">
                 <div className="flex-1 flex justify-center items-center h-[100%]">
                   <img
                     className=" h-[100%] object-cover"
@@ -57,7 +56,10 @@ const Slider = () => {
           );
         }
       })}
-      <div className={arrowStyle} onClick={nextSlide}>
+      <div
+        className="rounded-full bg-grey flex justify-center items-center shadow-md hover:cursor-pointer"
+        onClick={nextSlide}
+      >
         <ArrowRightOutlined style={{ fontSize: "48px" }} />
       </div>
     </div>
