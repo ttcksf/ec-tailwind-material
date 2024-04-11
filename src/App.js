@@ -1,9 +1,13 @@
 import Top from "./screen/Top";
+import Archive from "./screen/Archive";
+import Single from "./screen/Single";
 
 function App() {
   return (
     <div className="App">
-      <Top />
+      {/* <Top /> */}
+      {/* <Archive /> */}
+      <Single />
     </div>
   );
 }
