@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.input {
+  @apply border-[2px] rounded-lg outline-[#8a4af3] p-2 focus:border-[#8a4af3] ease-linear duration-200;
+}
+.btn {
+  @apply text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3;
+}
+.ableBtn {
+  @apply mt-4 flex justify-center bg-[#8a4af3] text-white font-medium rounded-md p-2 ease-linear duration-200;
+}
+.activeBtn {
+  @apply hover:bg-white hover:text-[#8a4af3] hover:scale-[1.0.5] hover:border-[2px] hover:shadow-md hover:border-[#8a4af3] cursor-pointer;
+}
+.disableBtn {
+  @apply opacity-50;
+}
+.summary {
+  @apply flex justify-center mt-3 w-[100%];
+}
+.item {
+  @apply flex w-[100%] h-auto md:flex-row items-center flex-col mb-8;
+}
+.quantity {
+  @apply flex-auto flex flex-col justify-center items-center md:mt-0 md:mb-0 mt-8 mb-8;
+}
+
+@tailwind utilities;
