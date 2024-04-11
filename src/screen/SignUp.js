@@ -17,12 +17,12 @@ const SignUp = () => {
   };
   return (
     <div className="flex justify-center w-[100%] h-[100vh] bg-[#FFC4DD]">
-      <div className="flex flex-col absolute top-[20%] shadow-lg border-silver border-[2px] bg-white rounded-lg p-5 mobile:w-[90%]">
+      <div className="flex flex-col absolute top-[20%] shadow-lg border-silver border-[2px] bg-white rounded-lg p-5 w-[90%]">
         <text className="text-2xl ">会員登録</text>
 
-        <div className="flex mt-8 w-auto">
+        <div className="flex md:flex-row flex-col mt-8 w-auto">
           <input
-            className="input mr-4"
+            className="input md:mr-4 md:mb-0 mr-0 mb-8"
             name="first"
             type="text"
             placeholder="姓"
@@ -50,9 +50,9 @@ const SignUp = () => {
           required
         />
 
-        <div className="flex mt-7">
+        <div className="flex md:flex-row flex-col mt-8">
           <input
-            className="input mr-4"
+            className="input md:mr-4 md:mb-0 mr-0 mb-8"
             name="pass"
             type="password"
             placeholder="パスワード"
