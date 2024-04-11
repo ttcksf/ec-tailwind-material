@@ -30,7 +30,7 @@
   @apply border-[2px] rounded-lg outline-[#8a4af3] p-2 focus:border-[#8a4af3] ease-linear duration-200;
 }
 .btn {
-  @apply text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3;
+  @apply text-white bg-[#8a4af3] rounded-md shadow-md md:mt-[30px] mt-[8px] md:p-4 p-2;
 }
 .ableBtn {
   @apply mt-4 flex justify-center bg-[#8a4af3] text-white font-medium rounded-md p-2 ease-linear duration-200;
