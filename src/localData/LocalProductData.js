@@ -3,7 +3,6 @@ import Product2 from "../images/product2.png";
 import Product3 from "../images/product3.png";
 import Product4 from "../images/product4.png";
 import Product5 from "../images/product5.png";
-import Product6 from "../images/product6.png";
 import Product7 from "../images/product7.png";
 import Product8 from "../images/product8.png";
 import Product9 from "../images/product9.png";
