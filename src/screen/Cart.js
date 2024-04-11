@@ -5,6 +5,7 @@ import Counter from "../components/Counter";
 import DirectMessage from "../components/DirectMessage";
 import Footer from "../components/Footer";
 import Product6 from "../images/product6.png";
+import Product8 from "../images/product8.png";
 
 const Cart = () => {
   return (
@@ -19,22 +20,22 @@ const Cart = () => {
         </div>
         <button className="btn mt-0">決済に進む</button>
       </div>
-      <div className="flex lg:flex-row m-8 flex-col">
+      <div className="flex lg:flex-row md:m-8 m-4 flex-col">
         <div className="flex flex-col flex-1 md:mr-8">
           <div className="item">
-            <div className=" product flex pl-8 items-center">
+            <div className=" product flex md:pl-8 pl-0 items-center">
               <img
                 className="product_img w-[8rem]"
                 src={Product6}
                 alt="product_img"
               />
 
-              <div className="disc flex items-start  h-auto flex-col ml-8">
+              <div className="disc flex items-start  h-auto flex-col md:ml-8 ml-4">
                 <p>
-                  <b className="mr-4">商品ID:</b>123456789
+                  <b>商品ID&nbsp;:&nbsp;</b>123456789
                 </p>
                 <p>
-                  <b className="mr-4">商品名:</b>【予約商品】生誕祭記念バッジ
+                  <b>商品名&nbsp;:&nbsp;</b>【予約商品】生誕祭記念バッジ
                 </p>
               </div>
             </div>
@@ -47,19 +48,19 @@ const Cart = () => {
             </div>
           </div>
           <div className="item">
-            <div className=" product flex pl-8 items-center">
+            <div className=" product flex md:pl-8 pl-0 items-center">
               <img
                 className="product_img w-[8rem]"
-                src={Product6}
+                src={Product8}
                 alt="product_img"
               />
 
-              <div className="disc flex items-start  h-auto flex-col ml-8">
+              <div className="disc flex items-start  h-auto flex-col md:ml-8 ml-4">
                 <p>
-                  <b className="mr-4">商品ID:</b>123456789
+                  <b>商品ID&nbsp;:&nbsp;</b>0987654321
                 </p>
                 <p>
-                  <b className="mr-4">商品名:</b>【予約商品】生誕祭記念バッジ
+                  <b>商品名&nbsp;:&nbsp;</b>【予約商品】生誕祭記念バッジ
                 </p>
               </div>
             </div>
@@ -73,23 +74,19 @@ const Cart = () => {
           </div>
         </div>
 
-        <div className="summary flex-[0.4] flex flex-col items-center w-auto h-[40vh] border-2 border-[#8a4af3] rounded-md shadow-lg p-8 text-lg mb-8">
+        <div className="summary flex-[0.4] flex flex-col items-center w-auto h-[40vh] border-2 border-[#8a4af3] rounded-md shadow-lg md:p-8 p-4 text-lg mb-8">
           <h1 className="text-[2rem]">ご注文内容</h1>
           <div className="summary">
-            <p>お買い上げ点数:</p>
-            <p>2点</p>
+            <p>お買い上げ点数:2点</p>
           </div>
           <div className="summary">
-            <p>【予約商品】生誕祭記念バッジ</p>
-            <p>800円</p>
+            <p>【予約商品】生誕祭記念バッジ:800円</p>
           </div>
           <div className="summary">
-            <p>【予約商品】生誕祭記念バッジ</p>
-            <p>800円</p>
+            <p>【予約商品】生誕祭記念バッジ:800円</p>
           </div>
           <div className="summary text-2xl font-bold">
-            <p>合計:</p>
-            <p>1400円</p>
+            <p>合計:1600円</p>
           </div>
         </div>
       </div>
