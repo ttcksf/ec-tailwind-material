@@ -15,14 +15,14 @@ const LogIn = () => {
   return (
     <div className="flex justify-center w-[100%] h-[100vh] bg-[#b892f7]">
       <div className="flex flex-col absolute top-[30%] bg-white shadow-lg border-silver border-[2px] rounded-lg p-8 md:w-[40%] w-[90%]">
-        <text className="text-2xl ">Log in</text>
+        <text className="text-2xl ">ログイン</text>
 
         <div className="flex mt-8">
           <input
             className="input mt-4 w-[100%]"
             name="email"
             type="email"
-            placeholder="Email"
+            placeholder="メールアドレス"
             onChange={handleChange}
             value={email}
             required
@@ -33,7 +33,7 @@ const LogIn = () => {
             className="input w-[100%]"
             name="pass"
             type="password"
-            placeholder="Password"
+            placeholder="パスワード"
             onChange={handleChange}
             value={pass}
             required
